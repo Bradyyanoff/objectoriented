@@ -17,7 +17,9 @@ class Comp151Window(arcade.Window):
         self.player.center_x = 250
         self.player.center_y = 250
     def on_update(self, delta_time):
-        pass
+        self.player.center_x += 3
+        if self.player.center_x > 500:
+            self.player.center_x = 0
 
     def on_draw(self):
         arcade.start_render()
