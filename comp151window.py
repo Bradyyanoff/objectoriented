@@ -12,7 +12,7 @@ class Comp151Window(arcade.Window):
         rock = arcade.Sprite(":resources:images/space_shooter/meteorGrey_med1.png")
         self.targets.append(rock)
         rock.center_y = 250
-        rock.center_x = 350
+        rock.center_x = 355
         self.player.center_x = 250
         self.player.center_y = 250
     def on_update(self, delta_time):
