@@ -12,13 +12,13 @@ class Comp151Window(arcade.Window):
         for number in range(5):
             rock = arcade.Sprite(":resources:images/space_shooter/meteorGrey_med1.png")
             self.targets.append(rock)
-            rock.center_y = random.randint(16, 484)
-            rock.center_x = random.randint(16, 484)
-        self.player.center_x = 250
-        self.player.center_y = 250
+            rock.center_y = random.randint(16, 724)
+            rock.center_x = random.randint(16, 934)
+        self.player.center_x = 500
+        self.player.center_y = 375
     def on_update(self, delta_time):
         self.player.center_x += 3
-        if self.player.center_x > 500:
+        if self.player.center_x > 1000:
             self.player.center_x = 0
 
     def on_draw(self):
